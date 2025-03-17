@@ -45,7 +45,7 @@ Se crea un nuevo volumen llamado `my_data`, se lista los volúmenes y se inspecc
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de los detalles del volumen `my_data`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img2.png)
 
 **Descripción:**  
 El comando `docker volume inspect` muestra detalles como la fecha de creación, el punto de montaje y el nombre del volumen.
@@ -65,7 +65,7 @@ Se ejecuta un contenedor con el volumen `my_data` montado, se crea un archivo en
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo `test.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img3.png)
 
 **Descripción:**  
 El comando muestra el contenido del archivo `test.txt`, confirmando que los datos se han escrito correctamente en el volumen.
@@ -86,7 +86,7 @@ Se ejecuta un segundo contenedor que comparte el mismo volumen, se verifica el a
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido actualizado del archivo `test.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img4.png)
 
 **Descripción:**  
 El comando muestra el contenido actualizado del archivo `test.txt`, confirmando que ambos contenedores pueden acceder y modificar los mismos datos.
@@ -110,7 +110,7 @@ Se realiza una copia de seguridad del volumen, se elimina el volumen original, s
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido restaurado del archivo `test.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img5.png)
 
 **Descripción:**  
 El comando muestra el contenido del archivo `test.txt` después de la restauración, confirmando que los datos se han recuperado correctamente.
@@ -158,7 +158,7 @@ Se crea un nuevo volumen llamado `my-vol` y se lista los volúmenes existentes p
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la lista de volúmenes](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img6.png)
 
 **Descripción:**  
 El comando `docker volume ls` muestra que el volumen `my-vol` ha sido creado exitosamente.
@@ -176,7 +176,7 @@ Se inspecciona el volumen `my-vol` para obtener detalles como el punto de montaj
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de los detalles del volumen `my-vol`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img7.png)
 
 **Descripción:**  
 El comando muestra detalles del volumen, incluyendo el `Mountpoint`, que indica la ruta en el sistema host donde se almacenan los datos.
@@ -197,7 +197,7 @@ Se cambia al usuario `root`, se navega al `Mountpoint` del volumen y se crea un 
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del archivo `test.txt` creado](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img8.png)
 
 **Descripción:**  
 El comando `ls` muestra que el archivo `test.txt` ha sido creado correctamente en el volumen.
@@ -241,7 +241,7 @@ Se crea un nuevo volumen llamado `nginx-vol` y se lista los volúmenes existente
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la lista de volúmenes](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img9.png)
 
 **Descripción:**  
 El comando `docker volume ls` muestra que el volumen `nginx-vol` ha sido creado exitosamente.
@@ -260,7 +260,7 @@ Se ejecuta un contenedor llamado `nginx` basado en la imagen oficial de Nginx, m
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor `nginx` en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img10.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `nginx` está en ejecución y utiliza el volumen `nginx-vol`.
@@ -279,7 +279,7 @@ Se crea un archivo `index.html` en el directorio `/tmp` con el contenido "hello 
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo `index.html`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img11.png)
 
 **Descripción:**  
 El comando `cat` muestra el contenido del archivo `index.html`, confirmando que se ha creado correctamente.
@@ -298,7 +298,7 @@ Se copia el archivo `index.html` desde el sistema host al contenedor `nginx` en 
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo en el contenedor](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img12.png)
 
 **Descripción:**  
 El comando `docker exec` muestra el contenido del archivo `index.html` dentro del contenedor, confirmando que se ha copiado correctamente.
@@ -343,7 +343,7 @@ Se crea un directorio llamado `nginx` en `/tmp` y se verifica que se ha creado c
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del directorio `nginx` creado](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img13.png)
 
 **Descripción:**  
 El comando `ls` muestra que el directorio `nginx` ha sido creado exitosamente en `/tmp`.
@@ -362,7 +362,7 @@ Se ejecuta un contenedor llamado `nginx-host` basado en la imagen oficial de Ngi
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor `nginx-host` en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img14.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `nginx-host` está en ejecución y utiliza el montaje de ruta de host.
@@ -629,7 +629,7 @@ Se crea un archivo `nginx.txt` en el directorio `/tmp/nginx` con el contenido "h
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo `nginx.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img15.png)
 
 **Descripción:**  
 El comando `cat` muestra el contenido del archivo `nginx.txt`, confirmando que se ha creado correctamente.
@@ -647,7 +647,7 @@ Se verifica que el archivo `nginx.txt` está accesible dentro del contenedor.
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo en el contenedor](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img16.png)
 
 **Descripción:**  
 El comando muestra el contenido del archivo `nginx.txt` dentro del contenedor, confirmando que el montaje de ruta de host funciona correctamente.
@@ -692,7 +692,7 @@ Se crea un directorio llamado `share` en `/tmp` y se verifica que se ha creado c
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del directorio `share` creado](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img17.png)
 
 **Descripción:**  
 El comando `ls` muestra que el directorio `share` ha sido creado exitosamente en `/tmp`.
@@ -711,7 +711,7 @@ Se ejecuta un contenedor llamado `nginx-share` basado en la imagen oficial de Ng
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor `nginx-share` en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img18.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `nginx-share` está en ejecución y utiliza el montaje de ruta de host.
@@ -730,7 +730,7 @@ Se ejecuta un contenedor llamado `busybox-share` basado en la imagen `busybox`, 
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor `busybox-share` en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img19.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `busybox-share` está en ejecución y utiliza el mismo montaje de ruta de host que `nginx-share`.
@@ -749,7 +749,7 @@ Se crea un archivo `share.txt` en el directorio `/tmp/share` con el contenido "h
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo `share.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img20.png)
 
 **Descripción:**  
 El comando `cat` muestra el contenido del archivo `share.txt`, confirmando que se ha creado correctamente.
@@ -785,7 +785,7 @@ Se verifica que el archivo `share.txt` está accesible dentro del contenedor `bu
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido del archivo en `busybox-share`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img21.png)
 
 **Descripción:**  
 El comando muestra el contenido del archivo `share.txt` dentro del contenedor `busybox-share`, confirmando que ambos contenedores comparten los mismos datos.
